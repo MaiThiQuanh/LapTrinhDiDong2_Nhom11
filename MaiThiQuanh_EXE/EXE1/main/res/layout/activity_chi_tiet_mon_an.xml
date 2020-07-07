@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.ChiTietMonAnActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarchitietmonan"
+        android:background="#FFC107"
+        app:titleTextColor="#140B0B"
+        app:title="Chi tiết món ăn "
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imageviewchitietmonan"
+            android:src="@mipmap/ic_launcher"
+            android:layout_margin="10dp"
+            android:layout_width="150dp"
+            android:layout_height="150dp"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/textviewtenchitietmonan"
+                android:text="Tên món ăn"
+                android:textStyle="bold"
+                android:textColor="#0D0B0B"
+                android:layout_margin="10dp"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/textviewgiachitietmonan"
+                android:text="Giá món ăn"
+                android:textColor="#D11111"
+                android:layout_margin="10dp"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <Button
+                android:id="@+id/buttondatmon"
+                android:textColor="#090404"
+                android:textSize="15sp"
+                android:text="Đặt món"
+                android:layout_marginRight="40dp"
+                android:background="#B8B6B6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </Button>
+        </LinearLayout>
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:textSize="25sp"
+            android:layout_marginTop="5dp"
+            android:textColor="#071F97"
+            android:text="Mô tả chi tiết món ăn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </TextView>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:textSize="20sp"
+                android:paddingBottom="10dp"
+                android:id="@+id/textviewmotachitietmonan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </TextView>
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>
