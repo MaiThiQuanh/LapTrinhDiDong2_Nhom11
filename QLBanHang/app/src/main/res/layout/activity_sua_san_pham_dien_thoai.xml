@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="400dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFC107">
+
+    <LinearLayout
+        android:gravity="center"
+        android:background="@drawable/boder"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="80dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_marginTop="30dp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:text="Cập nhật sản phẩm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <EditText
+            android:layout_margin="15dp"
+            android:id="@+id/edittextsuatensanpham"
+            android:inputType="text"
+            android:hint="Nhập tên sản phẩm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </EditText>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="50dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_marginRight="70dp"
+                android:textColor="#10142E"
+                android:textSize="15sp"
+                android:padding="10dp"
+                android:id="@+id/buttonCapNhat"
+                android:background="@drawable/spinner_button"
+                android:text="Cập nhật"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:background="@drawable/spinner_button"
+                android:textColor="#10142E"
+                android:textSize="15sp"
+                android:padding="10dp"
+                android:id="@+id/buttonhuy"
+                android:text="Hủy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+</LinearLayout>
+</LinearLayout>
+
